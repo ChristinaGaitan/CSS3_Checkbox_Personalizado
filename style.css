@@ -11,13 +11,14 @@ label{
 	color: gray;
 }
 input[type=checkbox]{
-	display: none;
+	/*display: none;*/
 }
 input[type=checkbox] + label{
 	cursor: pointer;
 }
+
 /*Pseudo clases*/
-label:before{
+label::before{
 	content: '';
 	background: transparent;
 	border: 4px solid #88c64b;
@@ -30,7 +31,8 @@ label:before{
 	vertical-align: middle;
 	text-shadow: 4px -2px 3px gray;
 }
-input[type=checkbox]:checked + label:before {
+
+input[type=checkbox]:checked + label::before {
 	content: '✓';
 	font-size: 85px;
 	font-family: "Times New Roman";
